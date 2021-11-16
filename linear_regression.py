@@ -7,8 +7,7 @@ w = random.randrange(-100,100)
 b = random.randrange(-100,100)
 
 for i in range(len(train)):
-    plot.append(train[i][1])
-plt.plot(plot)
+    plt.scatter(train[i][0], train[i][1])
 
 def mse(dataset, reg1, reg2):
     msev = 0
